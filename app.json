@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.reyhanraz.specifitrevamp"
     },
     "web": {
       "bundler": "metro",
@@ -27,10 +28,23 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
+          "image": "./assets/images/splash.png",
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/OpenSans-Light.ttf",
+            "./assets/fonts/OpenSans-Italic.ttf",
+            "./assets/fonts/OpenSans-Regular.ttf",
+            "./assets/fonts/OpenSans-Medium.ttf",
+            "./assets/fonts/OpenSans-SemiBold.ttf",
+            "./assets/fonts/OpenSans-Bold.ttf",
+            "./assets/fonts/OpenSans-ExtraBold.ttf"
+          ]
         }
       ]
     ],
