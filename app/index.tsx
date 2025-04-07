@@ -6,7 +6,6 @@ import { useStorage } from "@/hooks/useStorage";
 
 export default function Index() {
   const router = useRouter();
-  const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
   const [hasOnboarded, _] = useStorage(StorageKeys.HasOnboarded, false);
   const rootNavigationState = useRootNavigationState();
 
@@ -14,13 +13,11 @@ export default function Index() {
     if (rootNavigationState?.key) {
       if (!hasOnboarded) {
         router.replace("/(auth)/onboarding");
-      } else if (!isLoggedIn) {
-        router.replace("/(auth)/login");
       } else {
-        router.replace("/(tabs)");
+        router.replace("/(auth)/login");
       }
     }
-  }, [hasOnboarded, isLoggedIn, rootNavigationState]);
+  }, [hasOnboarded, rootNavigationState]);
 
   return null;
 }

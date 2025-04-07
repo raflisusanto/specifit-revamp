@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native";
 
 export const textStyles = StyleSheet.create({
+  xSmallRegular: {
+    fontFamily: "OpenSans-Regular",
+    fontSize: 12,
+  },
   xSmallBold: {
     fontFamily: "OpenSans-Bold",
     fontSize: 12,
@@ -10,8 +14,16 @@ export const textStyles = StyleSheet.create({
     fontWeight: 700,
     fontSize: 14,
   },
-  regularBold: {
+  normalRegular: {
+    fontFamily: "OpenSans-Regular",
+    fontSize: 16,
+  },
+  normalSemiBold: {
+    fontFamily: "OpenSans-SemiBold",
+    fontSize: 16,
+  },
+  normalBold: {
     fontFamily: "OpenSans-Bold",
     fontSize: 16,
-  }
+  },
 });

@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   titleStyle: {
     textAlign: "left",
     marginBottom: 14,
-    ...textStyles.regularBold,
+    ...textStyles.normalBold,
   },
   textStyle: {
     fontFamily: "OpenSans_400Regular",
